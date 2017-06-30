@@ -18,6 +18,162 @@ if(!isset($_SESSION['result'])){
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+	.images {margin-right: 12%; margin-bottom:5px;}
+	.container {margin-left:0px; margin-right:0px; width:100%;}
+	.jumbotron {margin-bottom: 0px; background-color:#fff;}
+	.appName {margin-left:5%; display: inline;}
+	.h2Inline {display: inline; margin-left: 5%;}
+	.h3Inline {display: inline; margin-left: 1%; color: #777;}
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+input[type=number] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+input[type=time] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+form{
+  font-size: 15px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 8.3px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(0, 255, 1, 0.35);
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1.9px 1.9px 1px #000000, 0px 0px 1.9px #0d0d0d;
+  border: 4.1px solid #00be00;
+  height: 25px;
+  width: 0px;
+  border-radius: 0px;
+  background: #000a00;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(13, 13, 13, 0);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(0, 255, 1, 0.35);
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1.9px 1.9px 1px #000000, 0px 0px 1.9px #0d0d0d;
+  border: 4.1px solid #00be00;
+  height: 25px;
+  width: 0px;
+  border-radius: 0px;
+  background: #000a00;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0);
+  border: 0.2px solid rgba(0, 255, 1, 0.35);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(0, 0, 0, 0);
+  border: 0.2px solid rgba(0, 255, 1, 0.35);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1.9px 1.9px 1px #000000, 0px 0px 1.9px #0d0d0d;
+  border: 4.1px solid #00be00;
+  height: 25px;
+  width: 0px;
+  border-radius: 0px;
+  background: #000a00;
+  cursor: pointer;
+  height: 8.4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(13, 13, 13, 0);
+}
+
+
+  </style>
 
 </head>
 <body>
