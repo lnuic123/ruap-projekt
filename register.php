@@ -69,14 +69,24 @@ if(isset($_POST['btn-register'])){
 
 <html>
 <head>
-<title>PHP Login & Register</title>
+<title>Register</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
+	<div class="container">
+    </div>
+
+	<div class="jumbotron" style="text-align: center;">
+	<div class="appName">
+	<h1 class="h2Inline">BASKETBALL SHOT PREDICTION</h1>
+	<img src="nba.png" class="img-rounded images" width="100" height="100">
+  </div>
+</div>
     <div class="container">
         <div style="width: 500px; margin: 50px auto;">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
-                <center><h2>Register</h2></center>
+                
+				<center><h2>Register</h2></center>
                 <hr/>
                 <?php
                     if(isset($successMsg)){
@@ -109,6 +119,7 @@ if(isset($_POST['btn-register'])){
 					<span class="text-danger"><?php if(isset($errorConfirm_password)) echo $errorConfirm_password; ?></span>
 				</div>
                 <div class="form-group">
+				<br>
                     <center><input type="submit" name="btn-register" value="Register" class="btn btn-primary"></center>
                 </div>
                 <hr/>

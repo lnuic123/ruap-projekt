@@ -6,7 +6,6 @@ if(!isset($_SESSION['username'])){
 }*/
 if(!isset($_SESSION['result'])){
 	$_SESSION["result"] = "";
-
 	}
 ?>
 
@@ -30,13 +29,11 @@ if(!isset($_SESSION['result'])){
       border-collapse: collapse;
       width: 100%;
   }
-
   td, th {
       border: 1px solid #dddddd;
       text-align: left;
       padding: 8px;
   }
-
   tr:nth-child(even) {
       background-color: #dddddd;
   }
@@ -50,7 +47,6 @@ if(!isset($_SESSION['result'])){
     box-sizing: border-box;
     font-size: 15px;
 }
-
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -171,8 +167,6 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: rgba(13, 13, 13, 0);
 }
-
-
   </style>
 
 
@@ -183,7 +177,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 	<div class="jumbotron" style="text-align: center;">
 	<div class="appName">
-	<h1 class="h2Inline">NBA</h1>
+	<h1 class="h2Inline">BASKETBALL SHOT PREDICTION</h1>
 	<img src="nba.png" class="img-rounded images" width="100" height="100">
   </div>
 </div>
@@ -199,14 +193,14 @@ input[type=range]:focus::-ms-fill-upper {
 		<ul class="nav navbar-nav">
       <li ><a>Welcome <?php //echo $_SESSION['username']; ?></a></li>
 		  <li class="active"><a href="#">Home</a></li>
-		  <li><a href="anderson.html">Alan Anderson</a></li>
-		  <li><a href="james.html">LeBron James</a></li>
-		  <li><a href="curry.html">Stephen Curry</a></li>
-		  <li><a href="bryant.html">Kobe Bryant</a></li>
-		  <li><a href="roberts.html">Brian Roberts</a></li>
-		  <li><a href="young.html">Nick Young</a></li>
-		  <li><a href="anthony.html">Carmelo Anthony</a></li>
-		  <li><a href="durant.html">Kevin Durant</a></li>
+		  <li><a href="anderson.php">Alan Anderson</a></li>
+		  <li><a href="james.php">LeBron James</a></li>
+		  <li><a href="curry.php">Stephen Curry</a></li>
+		  <li><a href="bryant.php">Kobe Bryant</a></li>
+		  <li><a href="roberts.php">Brian Roberts</a></li>
+		  <li><a href="young.php">Nick Young</a></li>
+		  <li><a href="anthony.php">Carmelo Anthony</a></li>
+		  <li><a href="durant.php">Kevin Durant</a></li>
       <li><a href="logout.php">Logout</a></li>
 		</ul>
 	</div>
@@ -222,14 +216,6 @@ input[type=range]:focus::-ms-fill-upper {
 	  <option value="A">Away</option>
 	</select>
   <br>
-  <!--
-  Win/Lose:<br>
-    	<select name="winlose">
-	  <option value="W">Win</option>
-	  <option value="L">Lose</option>
-	</select>
-  <br>
-  -->
   Shot clock:<br>
   <input type="number" name="shotclock" min="0" max="24"  value="10">
   <br>
@@ -269,7 +255,6 @@ input[type=range]:focus::-ms-fill-upper {
       shotd.value = 22;
     }
   }
-
   function checkradio(newValue){
     if(newValue < 22){
       radiobtn2.checked = true;
@@ -314,7 +299,6 @@ input[type=range]:focus::-ms-fill-upper {
   <tr>
     <th>Player name</th>
     <th>Location</th>
-    <th>Win/Lose</th>
     <th>Shot clock</th>
     <th>Period</th>
     <th>Shot distance</th>
@@ -331,12 +315,10 @@ input[type=range]:focus::-ms-fill-upper {
         }
         $sql="SELECT * FROM rez";
         $result = mysqli_query($con,$sql);
-
         while($row = mysqli_fetch_array($result)) {
                   echo '<tr>';
                   echo '<td>'.$row['player'].'</td>';
                   echo '<td>'.$row['location'].'</td>';
-                  echo '<td>'.$row['winlose'].'</td>';
                   echo '<td>'.$row['shotclock'].'</td>';
                   echo '<td>'.$row['period'].'</td>';
                   echo '<td>'.$row['shotdistance'].'</td>';

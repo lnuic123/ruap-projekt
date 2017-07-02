@@ -45,10 +45,19 @@ if(isset($_POST['btn-login'])){
 
 <html>
 <head>
-<title>PHP Login & Register</title>
+<title>RUAP</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
+	<div class="container">
+    </div>
+
+	<div class="jumbotron" style="text-align: center;">
+	<div class="appName">
+	<h1 class="h2Inline">BASKETBALL SHOT PREDICTION</h1>
+	<img src="nba.png" class="img-rounded images" width="100" height="100">
+  </div>
+</div>
     <div class="container">
         <div style="width: 500px; margin: 50px auto;">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
